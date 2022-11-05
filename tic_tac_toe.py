@@ -21,11 +21,11 @@ def main():
     carry_on = True
     player = "X"
 
-    while (carry_on):
+    while (carry_on == True):
         show_grid()
-        choice = input(f"\n{player}'s turn to choose a square (1-9): ")
+        choice = int(input(f"\n{player}'s turn to choose a square (1-9): "))
 
-        if choice == "0":
+        if choice == 0:
             carry_on = False
             
 
