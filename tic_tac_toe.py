@@ -1,7 +1,10 @@
 """
+Game Description:
 Tic-Tac-Toe is a game in which two players seek in alternate turns 
 to complete a row, a column, or a diagonal with either three x's or 
 three o's drawn in the spaces of a grid of nine squares.
+-------------------------------------------------------------------
+Author: Aaron Wilson
 """
 
 def main():
@@ -92,18 +95,14 @@ def main():
     print("") 
     show_grid(L1,M1,R1,L2,M2,R2,L3,M3,R3)
     print(f"\nGood game. Thanks for playing!")
-            
-
-            
-            
 
 
 def show_grid(L1,M1,R1,L2,M2,R2,L3,M3,R3): #Print out the game board
-    print(f"{L1}|{M1}|{R1}")
+    print(f"{L1}|{M1}|{R1}") #Row 1
     print(f"-+-+-")
-    print(f"{L2}|{M2}|{R2}")
+    print(f"{L2}|{M2}|{R2}") #Row 2
     print(f"-+-+-")
-    print(f"{L3}|{M3}|{R3}")
+    print(f"{L3}|{M3}|{R3}") #Row 3
 
 def check_score(player,L1,M1,R1,L2,M2,R2,L3,M3,R3): #Check to see if there is a winner
     if L1 == player and M1 == player and R1 == player: #Row 1 Check
@@ -140,7 +139,6 @@ def check_score(player,L1,M1,R1,L2,M2,R2,L3,M3,R3): #Check to see if there is a 
         carry_on = True
 
     return carry_on
-
 
 def change_player(player_symbol): #Change player Icon
     if player_symbol == "X":
